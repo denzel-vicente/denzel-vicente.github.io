@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Denzel Vicente - Full-Stack Developer & Systems Architect with 4 years of experience.">
+    <meta property="og:title" content="Denzel Vicente | Engineering Logic Station">
+    <meta property="og:description" content="Full-Stack Developer & Systems Architect from Cabo Verde">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Denzel Vicente | Engineering Logic Station</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body data-theme="dark">
+    <a href="#home" class="skip-link">Skip to main content</a>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <!-- 1. The Fixed Anchor (Navigation) -->
+    <nav>
+        <div class="container nav-content">
+            <a href="#home" class="brand" data-text="DV">DV</a>
+            
+            <div class="nav-links">
+                <a href="#about" data-i18n="nav_about">About</a>
+                <a href="#projects" data-i18n="nav_projects">Projects</a>
+                <a href="#stack" data-i18n="nav_stack">Stack</a>
+                <a href="#contact" data-i18n="nav_contact">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <!-- Language Switcher -->
+                <div class="lang-switcher">
+                    <button class="lang-btn" data-lang="en" aria-label="Switch to English">EN</button>
+                    <span aria-hidden="true">|</span>
+                    <button class="lang-btn" data-lang="pt" aria-label="Mudar para Português">PT</button>
+                </div>
+            </div>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 2. The Hero Module -->
+    <header class="container hero" id="home">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <p class="hero-hello" data-i18n="hero_hello">HELLO WORLD 👋</p>
+                <h1 data-i18n="hero_im">I am Denzel Vicente</h1>
+                <p class="hero-role" data-i18n="hero_role">Full-Stack Developer & Systems Architect</p>
+                <p class="hero-tagline" data-i18n="hero_tagline">"Engineering performance where others see limitations."</p>
+                <p class="hero-location" data-i18n="hero_location">Praia, Cabo Verde 🇨🇻</p>
+                <div class="btn-group">
+                    <a href="#contact" class="btn btn-solid" data-i18n="hero_cta_contact">CONTACT STATION</a>
+                    <a href="#projects" class="btn btn-outline" data-i18n="hero_cta_projects">VIEW PROJECTS</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="terminal-mockup" aria-label="Terminal interface showing initialization logs">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="term-btn close"></span>
+                            <span class="term-btn minimize"></span>
+                            <span class="term-btn expand"></span>
+                        </div>
+                        <div class="terminal-title">denzel@workstation:~</div>
+                    </div>
+                    <div class="terminal-body">
+                        <!-- Dynamic terminal output goes here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. The About Section -->
+    <section class="container about-section" id="about">
+        <p class="hero-hello" data-i18n="about_subtitle">THE POWER STATS</p>
+        <h2 class="section-title" data-i18n="nav_about">About</h2>
+        
+        <div class="about-content">
+            <!-- Left Column: Photo -->
+            <div class="about-photo-wrapper">
+                <div class="about-circle-photo">
+                    <img src="profile.png" alt="Denzel Vicente" class="about-img" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Right Column: Narrative / Bio -->
+            <div class="about-bio">
+                <p class="bio-lead" data-i18n="about_lead">Full-Stack Developer from <strong>Cabo Verde</strong>, passionate about transforming ideas into functional and well-built digital products.</p>
+                <p class="bio-text" data-i18n="about_journey">I began my programming journey over <strong>4 years ago</strong>. Since then, I've built various public projects that demonstrate a consistent evolution — from simple logical tools like calculators, to custom 2D physics engines in JavaScript, production school portals, and winning Game Jam submissions.</p>
+                <p class="bio-text" data-i18n="about_specialty_desc">With <strong>1 year of professional experience</strong>, I specialize in web systems development and hardware optimization, primarily working with the JavaScript, Node.js, and PHP ecosystems.</p>
+                <blockquote class="bio-quote">
+                    <span data-i18n="about_quote">"I believe high-level performance and clean engineering are essential to build exceptional software — bypassing any hardware limitations."</span>
+                </blockquote>
+            </div>
+        </div>
+
+        <!-- Bottom Row: 4 Stats Cards -->
+        <div class="about-stats-row">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg>
+                </div>
+                <div class="stat-value">4+</div>
+                <div class="stat-label" data-i18n="about_stat_github">Years on GitHub</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                </div>
+                <div class="stat-value">1 Year</div>
+                <div class="stat-label" data-i18n="about_stat_professional">Professional Exp</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.45 1-1 1H4v2h16v-2h-5c-.55 0-1-.45-1-1v-2.34"></path><path d="M12 2a7.7 7.7 0 0 1 7.54 8H4.46A7.7 7.7 0 0 1 12 2z"></path></svg>
+                </div>
+                <div class="stat-value">1st Place</div>
+                <div class="stat-label" data-i18n="about_stat_jam">Game Jam Winner</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                </div>
+                <div class="stat-value">15+</div>
+                <div class="stat-label" data-i18n="about_stat_tech">Technologies</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. The Project Mosaic Gallery -->
+    <section class="container mosaic-section" id="projects">
+        <p class="hero-hello" data-i18n="projects_subtitle">THE PROJECT MOSAIC</p>
+        <div class="projects-header">
+            <h2 class="section-title" data-i18n="projects_title">Infrastructure Gallery</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web & Logic</button>
+                <button class="filter-btn" data-filter="hardware">Systems & Hardware</button>
+            </div>
+        </div>
+        
+        <div class="mosaic-grid">
+            <!-- Project 1 -->
+            <div class="mosaic-card" data-category="web">
+                <div>
+                    <h3 class="card-title" data-i18n="project_espcr_title">ESPCR School Portal</h3>
+                    <p class="card-mission-label" data-i18n="project_mission_label">MISSION</p>
+                    <p class="card-desc" data-i18n="project_espcr_mission">Modernizing the digital infrastructure for an educational institution.</p>
+                </div>
+                <div class="tech-capsules">
+                    <span class="capsule">HTML</span>
+                    <span class="capsule">CSS</span>
+                    <span class="capsule">PHP</span>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="mosaic-card" data-category="web">
+                <div>
+                    <h3 class="card-title" data-i18n="project_kriol_title">KriolCode</h3>
+                    <p class="card-mission-label" data-i18n="project_mission_label">MISSION</p>
+                    <p class="card-desc" data-i18n="project_kriol_mission">Developing a community hub for local Cape Verdean developers.</p>
+                </div>
+                <div class="tech-capsules">
+                    <span class="capsule">PHP</span>
+                    <span class="capsule">Responsive Design</span>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="mosaic-card" data-category="hardware">
+                <div>
+                    <h3 class="card-title" data-i18n="project_chrome_title">The 'Ghost' Chromebook Mod</h3>
+                    <p class="card-mission-label" data-i18n="project_mission_label">MISSION</p>
+                    <p class="card-desc" data-i18n="project_chrome_mission">Bypassing factory limitations to convert 4GB RAM/16GB ROM into a Linux Workstation.</p>
+                </div>
+                <div class="tech-capsules">
+                    <span class="capsule">MrChromebox</span>
+                    <span class="capsule">Linux Q4OS</span>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="mosaic-card" data-category="hardware">
+                <div>
+                    <h3 class="card-title" data-i18n="project_jam_title">Game Jam Prototype</h3>
+                    <p class="card-mission-label" data-i18n="project_mission_label">MISSION</p>
+                    <p class="card-desc" data-i18n="project_jam_mission">Winning project built under a 72-hour deadline.</p>
+                </div>
+                <div class="tech-capsules">
+                    <span class="capsule">Logic Design</span>
+                    <span class="capsule">Rapid Dev</span>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="mosaic-card" data-category="web">
+                <div>
+                    <h3 class="card-title" data-i18n="project_24hora_title">24 Hora</h3>
+                    <p class="card-mission-label" data-i18n="project_mission_label">MISSION</p>
+                    <p class="card-desc" data-i18n="project_24hora_mission">Modern, high-performance website and reservation system for a 24-hour restaurant.</p>
+                </div>
+                <div class="tech-capsules">
+                    <span class="capsule">React.js</span>
+                    <span class="capsule">Node.js</span>
+                    <span class="capsule">Express.js</span>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="mosaic-card" data-category="web">
+                <div>
+                    <h3 class="card-title" data-i18n="project_delicias_title">Dora Delícias</h3>
+                    <p class="card-mission-label" data-i18n="project_mission_label">MISSION</p>
+                    <p class="card-desc" data-i18n="project_delicias_mission">Visual landing page and catalog for a local artisan pastry shop.</p>
+                </div>
+                <div class="tech-capsules">
+                    <span class="capsule">HTML5</span>
+                    <span class="capsule">CSS3</span>
+                    <span class="capsule">JavaScript</span>
+                </div>
+            </div>
+
+            <!-- Project 7 -->
+            <div class="mosaic-card" data-category="web">
+                <div>
+                    <h3 class="card-title" data-i18n="project_shrd_title">SHRD Elite</h3>
+                    <p class="card-mission-label" data-i18n="project_mission_label">MISSION</p>
+                    <p class="card-desc" data-i18n="project_shrd_mission">Open-source developer training application designed to enhance coding and logical skills.</p>
+                </div>
+                <div class="tech-capsules">
+                    <span class="capsule">TypeScript</span>
+                    <span class="capsule">React.js</span>
+                </div>
+            </div>
+
+            <!-- Project 8 -->
+            <div class="mosaic-card" data-category="web">
+                <div>
+                    <h3 class="card-title" data-i18n="project_openmarket_title">Open Market</h3>
+                    <p class="card-mission-label" data-i18n="project_mission_label">MISSION</p>
+                    <p class="card-desc" data-i18n="project_openmarket_mission">Open-source Point of Sale (POS) workstation software optimized for local vendors.</p>
+                </div>
+                <div class="tech-capsules">
+                    <span class="capsule">TypeScript</span>
+                    <span class="capsule">Node.js</span>
+                    <span class="capsule">SQLite</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. The Tabbed Technical Toolkit -->
+    <section class="container stack-section" id="stack">
+        <p class="hero-hello" data-i18n="stack_subtitle">THE TOOLKIT</p>
+        <h2 class="section-title" data-i18n="stack_title">Technical Stack</h2>
+        
+        <div class="toolkit-grid">
+            <!-- FRONTEND -->
+            <div class="toolkit-category">
+                <h3 class="category-title">
+                    <span class="category-icon">
+                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    </span>
+                    <span data-i18n="stack_frontend">Frontend</span>
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"><path d="M1.5 22L0 2h24l-1.5 20L12 24zm17.06-14.77H5.44l.38 4.25h11.96l-.4 4.51L12 17.38l-5.38-1.39-.24-2.74H4.02l.4 4.58L12 20.31l7.58-2.48.88-9.82z" fill="currentColor"/></svg>
+                        <span class="skill-name">HTML5</span>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"><path d="M1.5 22L0 2h24l-1.5 20L12 24zm4-15h13l-.86 9.7L12 18.25l-4.64-1.55L7.04 13h2.48l.18 2.07 2.3.77 2.3-.77.27-3.05H7.28l-.23-2.65H15l.18-2H5.73z" fill="currentColor"/></svg>
+                        <span class="skill-name">CSS3</span>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"><path d="M24 0H0v24h24V0zM12.8 17.6c-.3 1.4-1.2 2.3-3.1 2.3-1.8 0-2.8-1-3.2-2l1.9-1.1c.3.6.7 1.1 1.3 1.1.7 0 1.1-.3 1.1-.9v-8.1h2.2v8.7h-.2zm6.2-.2c-.3 1.1-1.2 2.5-3.6 2.5-2.2 0-3.5-1.2-3.9-2.5l1.9-1.1c.3.7.8 1.6 2 1.6.9 0 1.5-.4 1.5-1.1 0-.7-.6-1-1.7-1.5l-.8-.3c-2-.8-3.4-1.9-3.4-4.1 0-2 1.6-3.7 3.9-3.7 2.1 0 3.3.9 3.9 2.2l-1.8 1.1c-.3-.7-.8-1.3-2-1.3-.7 0-1.3.4-1.3 1 0 .7.4 1 1.4 1.4l.8.3c2.4 1 3.8 2.1 3.8 4.4v.8z" fill="currentColor"/></svg>
+                        <span class="skill-name">JavaScript</span>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M22 2H2v20h20V2zM7.25 18.5h-1.5V8.25H2v-1.5h9v1.5H7.25V18.5zm10 0c-1.5 0-2.75-.75-3.25-1.75l1.25-.75c.25.5.75.75 1.5.75.75 0 1.25-.25 1.25-.75s-.25-.5-1.25-.75c-1.5-.5-2.5-1-2.5-2.25 0-1.25 1-2.25 2.5-2.25 1.25 0 2.25.5 2.75 1.5l-1.25.75c-.25-.5-.75-.75-1.25-.75-.75 0-1 .25-1 .5s.25.5 1 1c1.25.5 2.5.75 2.5 2 0 1.25-1 2.25-2.5 2.25z" fill="currentColor"/></svg>
+                        <span class="skill-name">TypeScript</span>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="-11.5 -10.23 23 20.46"><circle cx="0" cy="0" r="2.05" fill="currentColor"/><g stroke="currentColor" stroke-width="1" fill="none"><ellipse rx="11" ry="4.2"/><ellipse rx="11" ry="4.2" transform="rotate(60)"/><ellipse rx="11" ry="4.2" transform="rotate(120)"/></g></svg>
+                        <span class="skill-name">React.js</span>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"><path d="M24,1.61H17.8L12,11.66,6.2,1.61H0L12,22.39ZM12,14.1,17.76,4.12H13.6L12,6.89,10.4,4.12H6.24Z" fill="currentColor"/></svg>
+                        <span class="skill-name">Vue.js</span>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.5 15.5l-4.5-6v6H10.5V8.5h1.5l4.5 6v-6h1.5v9h-1.5z" fill="currentColor"/></svg>
+                        <span class="skill-name">Next.js</span>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"><path d="M12 2L2 20h20L12 2zm0 4l6.5 11.5h-13L12 6zm-3.5 8h7L12 9.5 8.5 14z" fill="currentColor"/></svg>
+                        <span class="skill-name">Astro</span>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"><path d="M12 6.5c-2.4 0-4 .8-4.8 2.4.9-.8 2-.6 2.4.8.4 1.2-.2 2.2-1.4 2.8C7 13 6 14.5 6 16.5c0 2.4 1.6 3.5 4.8 3.5 2.4 0 4-.8 4.8-2.4-.9.8-2 .6-2.4-.8-.4-1.2.2-2.2 1.4-2.8 1.2-.5 2.2-2 2.2-4 0-2.4-1.6-3.5-4.8-3.5zm6-5c-2.4 0-4 .8-4.8 2.4.9-.8 2-.6 2.4.8.4 1.2-.2 2.2-1.4 2.8-1.2.5-2.2 2-2.2 4 0 2.4 1.6 3.5 4.8 3.5 2.4 0 4-.8 4.8-2.4-.9.8-2 .6-2.4-.8-.4-1.2.2-2.2 1.4-2.8 1.2-.5 2.2-2 2.2-4 0-2.4-1.6-3.5-4.8-3.5z" fill="currentColor"/></svg>
+                        <span class="skill-name">Tailwind CSS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BACKEND -->
+            <div class="toolkit-category">
+                <h3 class="category-title">
+                    <span class="category-icon">
+                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>
+                    </span>
+                    <span data-i18n="stack_backend">Backend</span>
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"><path d="M12 2L3.5 7v10L12 22l8.5-5V7L12 2zm6.5 14.3L12 20.1l-6.5-3.8V8.7L12 4.9l6.5 3.8v7.6zM11.5 8h1v5.5h-1V8zm0 7.5h1v1h-1v-1z" fill="currentColor"/></svg>
+                        <span class="skill-name">Node.js</span>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.36 12.3c-.29.47-.75.7-1.36.7s-1.07-.23-1.36-.7c-.29-.47-.44-1.12-.44-1.95v-.7c0-.83.15-1.48.44-1.95.29-.47.75-.7 1.36-.7s1.07.23 1.36.7c.29.47.44 1.12.44 1.95v.7c0 .83-.15 1.48-.44 1.95zM8.5 15h-1.8V9h1.8v6zm4.86-4.7c0-.42-.07-.75-.22-.98-.15-.23-.37-.35-.68-.35s-.53.12-.68.35c-.15.23-.22.56-.22.98v1.4c0 .42.07.75.22.98.15.23.37.35.68.35s.53-.12.68-.35c.15-.23.22-.56.22-.98v-1.4z" fill="currentColor"/></svg>
+                        <span class="skill-name">Express.js</span>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-4 13H6V9h2c1.1 0 2 .9 2 2s-.9 2-2 2zm10 0h-2V9h2c1.1 0 2 .9 2 2s-.9 2-2 2zm-5 0h-2V9h2c1.1 0 2 .9 2 2s-.9 2-2 2z" fill="currentColor"/></svg>
+                        <span class="skill-name">PHP</span>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M22 2H2v20h20V2zM7.25 18.5h-1.5V8.25H2v-1.5h9v1.5H7.25V18.5zm10 0c-1.5 0-2.75-.75-3.25-1.75l1.25-.75c.25.5.75.75 1.5.75.75 0 1.25-.25 1.25-.75s-.25-.5-1.25-.75c-1.5-.5-2.5-1-2.5-2.25 0-1.25 1-2.25 2.5-2.25 1.25 0 2.25.5 2.75 1.5l-1.25.75c-.25-.5-.75-.75-1.25-.75-.75 0-1 .25-1 .5s.25.5 1 1c1.25.5 2.5.75 2.5 2 0 1.25-1 2.25-2.5 2.25z" fill="currentColor"/></svg>
+                        <span class="skill-name">TypeScript</span>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"><path d="M14.25.18c.9 0 1.66.73 1.66 1.65v2.89h-2.93c-.9 0-1.66.73-1.66 1.65v1.94h-4.3c-.9 0-1.66.73-1.66 1.65v2.89h-1.7c-.9 0-1.66-.73-1.66-1.65V7.4c0-.9.74-1.66 1.66-1.66h1.7V4.09c0-.9.74-1.66 1.66-1.66h5.27V.18zM6.67 3.32a.7.7 0 1 1 0 1.4.7.7 0 0 1 0-1.4zm5.08 6.43c.9 0 1.65-.74 1.65-1.66V6.15h4.3c.9 0 1.66-.73 1.66-1.65V1.61c0-.9-.74-1.66-1.66-1.66h-1.7V2.8c0 .9-.74 1.66-1.66 1.66h-5.27v2.26c0 .9.74 1.66 1.66 1.66h2.93v1.43zm5.66 6.93a.7.7 0 1 1 0 1.4.7.7 0 0 1 0-1.4z" fill="currentColor"/></svg>
+                        <span class="skill-name">Python</span>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.3 13.3c-.8.8-1.9 1.2-3.3 1.2-2.8 0-5-2.2-5-5s2.2-5 5-5c1.4 0 2.5.4 3.3 1.2l-1.4 1.4c-.5-.5-1.1-.7-1.9-.7-1.7 0-3 1.3-3 3s1.3 3 3 3c.8 0 1.4-.2 1.9-.7l1.4 1.4z" fill="currentColor"/></svg>
+                        <span class="skill-name">C</span>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"><path d="M24 0H0v24h24V0zM12.8 17.6c-.3 1.4-1.2 2.3-3.1 2.3-1.8 0-2.8-1-3.2-2l1.9-1.1c.3.6.7 1.1 1.3 1.1.7 0 1.1-.3 1.1-.9v-8.1h2.2v8.7h-.2zm6.2-.2c-.3 1.1-1.2 2.5-3.6 2.5-2.2 0-3.5-1.2-3.9-2.5l1.9-1.1c.3.7.8 1.6 2 1.6.9 0 1.5-.4 1.5-1.1 0-.7-.6-1-1.7-1.5l-.8-.3c-2-.8-3.4-1.9-3.4-4.1 0-2 1.6-3.7 3.9-3.7 2.1 0 3.3.9 3.9 2.2l-1.8 1.1c-.3-.7-.8-1.3-2-1.3-.7 0-1.3.4-1.3 1 0 .7.4 1 1.4 1.4l.8.3c2.4 1 3.8 2.1 3.8 4.4v.8z" fill="currentColor"/></svg>
+                        <span class="skill-name">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MOBILE & DESKTOP -->
+            <div class="toolkit-category">
+                <h3 class="category-title">
+                    <span class="category-icon">
+                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                    </span>
+                    <span data-i18n="stack_mobile_desktop">Mobile & Desktop</span>
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <svg viewBox="-11.5 -10.23 23 20.46"><circle cx="0" cy="0" r="2.05" fill="currentColor"/><g stroke="currentColor" stroke-width="1" fill="none"><ellipse rx="11" ry="4.2"/><ellipse rx="11" ry="4.2" transform="rotate(60)"/><ellipse rx="11" ry="4.2" transform="rotate(120)"/></g></svg>
+                        <span class="skill-name">React Native</span>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 15a5 5 0 110-10 5 5 0 010 10zm-6-5a1 1 0 112 0 1 1 0 01-2 0zm10 0a1 1 0 112 0 1 1 0 01-2 0z" fill="currentColor"/></svg>
+                        <span class="skill-name">Electron.js</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BANCO DE DADOS -->
+            <div class="toolkit-category">
+                <h3 class="category-title">
+                    <span class="category-icon">
+                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>
+                    </span>
+                    <span data-i18n="stack_databases">Banco de Dados</span>
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c3.31 0 6 1.34 6 3s-2.69 3-6 3-6-1.34-6-3 2.69-3 6-3zm0 5c3.31 0 6 1.34 6 3v2c0 1.66-2.69 3-6 3s-6-1.34-6-3v-2c0-1.66 2.69-3 6-3zm0 5c3.31 0 6 1.34 6 3v2c0 1.66-2.69 3-6 3s-6-1.34-6-3v-2c0-1.66 2.69-3 6-3z" fill="currentColor"/></svg>
+                        <span class="skill-name">SQL</span>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c3.31 0 6 1.34 6 3s-2.69 3-6 3-6-1.34-6-3 2.69-3 6-3zm0 5c3.31 0 6 1.34 6 3v2c0 1.66-2.69 3-6 3s-6-1.34-6-3v-2c0-1.66 2.69-3 6-3zm0 5c3.31 0 6 1.34 6 3v2c0 1.66-2.69 3-6 3s-6-1.34-6-3v-2c0-1.66 2.69-3 6-3z" fill="currentColor"/></svg>
+                        <span class="skill-name">SQLite</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FERRAMENTAS & DEVOPS -->
+            <div class="toolkit-category">
+                <h3 class="category-title">
+                    <span class="category-icon">
+                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 15V9a4 4 0 0 0-4-4H9"></path><line x1="6" y1="9" x2="6" y2="15"></line></svg>
+                    </span>
+                    <span data-i18n="stack_tools_devops">Ferramentas & DevOps</span>
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"><path d="M23.38 11.38L12.62.62c-.83-.83-2.18-.83-3 0L.62 9.62c-.83.83-.83 2.18 0 3l10.76 10.76c.83.83 2.18.83 3 0l9-9c.83-.84.83-2.19 0-3.02zM12 18c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm0-6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.3-2.7c-.4-.4-1-.4-1.4 0l-1.4 1.4c-.1-.1-.3-.2-.5-.2V6c0-1.1-.9-2-2-2s-2 .9-2 2v2.5c-.2 0-.4.1-.5.2L6.1 7.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l1.4 1.4c.1.1.2.3.2.5H4c-1.1 0-2 .9-2 2s.9 2 2 2h2.5c0 .2-.1.4-.2.5l-1.4 1.4c-.4.4-.4 1 0 1.4.4.4 1 .4 1.4 0l1.4-1.4c.1-.1.2-.3.2-.5H12c1.1 0 2-.9 2-2v-2.5c.2 0 .4-.1.5-.2l1.4 1.4c.4.4 1 .4 1.4 0 .4-.4.4-1 0-1.4z" fill="currentColor"/></svg>
+                        <span class="skill-name">Git</span>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.63-.33 2.47-.33.84 0 1.68.11 2.47.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" fill="currentColor"/></svg>
+                        <span class="skill-name">GitHub</span>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"><path d="M23.95 13.58l-1.34-4.13a.52.52 0 0 0-.17-.26.54.54 0 0 0-.31-.1h-.03a.55.55 0 0 0-.31.1.52.52 0 0 0-.17.26l-1.34 4.13H7.66l-1.34-4.13a.52.52 0 0 0-.17-.26.54.54 0 0 0-.31-.1h-.03a.55.55 0 0 0-.31.1.52.52 0 0 0-.17.26l-1.34 4.13a.62.62 0 0 0 .22.69l11.43 8.3a.6.6 0 0 0 .7 0l11.43-8.3a.62.62 0 0 0 .22-.69z" fill="currentColor"/></svg>
+                        <span class="skill-name">GitLab</span>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"><path d="M23.98 6.74L16 0V6.74h7.98zM16 17.26v6.74l7.98-6.74H16zM0 6.74V17.26L6.22 12 0 6.74zm8.22 11.23l6.22 5.03V1V6.74L8.22 12l-.02 5.97z" fill="currentColor"/></svg>
+                        <span class="skill-name">VS Code</span>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"><path d="M4.6 2h14.8c1.4 0 2.6 1.2 2.6 2.6v14.8c0 1.4-1.2 2.6-2.6 2.6H4.6C3.2 22 2 20.8 2 19.4V4.6C2 3.2 3.2 2 4.6 2zm4.1 3.5c-.3 0-.6.1-.8.3L5.4 7.9c-.2.2-.3.5-.3.8v7.6c0 .6.5 1.1 1.1 1.1h1.5V11l4.8 6.4h1.4c.6 0 1.1-.5 1.1-1.1V8.7c0-.6-.5-1.1-1.1-1.1H12v6.4L7.2 7.6h-1.4v-.1z" fill="currentColor"/></svg>
+                        <span class="skill-name">Notion</span>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"><path d="M12 2L9.5 9.5 2 12l7.5 2.5L12 22l2.5-7.5L22 12l-7.5-2.5L12 2zm0 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z" fill="currentColor"/></svg>
+                        <span class="skill-name">Google Antigravity</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI MASTERY -->
+            <div class="toolkit-category">
+                <h3 class="category-title">
+                    <span class="category-icon">
+                        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c-.1 0-.1 0 0 0 .5 4.7 4.3 8.5 9 9 .1 0 .1 0 0 0-4.7.5-8.5 4.3-9 9 0 .1 0 .1 0 0-.5-4.7-4.3-8.5-9-9 0 0 0 0 0 0 4.7-.5 8.5-4.3 9-9z" fill="currentColor"/></svg>
+                    </span>
+                    <span data-i18n="stack_ai_mastery">AI Mastery</span>
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"><path d="M12 2c-.1 0-.1 0 0 0 .5 4.7 4.3 8.5 9 9 .1 0 .1 0 0 0-4.7.5-8.5 4.3-9 9 0 .1 0 .1 0 0-.5-4.7-4.3-8.5-9-9 0 0 0 0 0 0 4.7-.5 8.5-4.3 9-9z" fill="currentColor"/></svg>
+                        <span class="skill-name">Gemini 1.5 Pro</span>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"><path d="M12 2c-.1 0-.1 0 0 0 .5 4.7 4.3 8.5 9 9 .1 0 .1 0 0 0-4.7.5-8.5 4.3-9 9 0 .1 0 .1 0 0-.5-4.7-4.3-8.5-9-9 0 0 0 0 0 0 4.7-.5 8.5-4.3 9-9z" fill="currentColor"/></svg>
+                        <span class="skill-name">Gemini 1.5 Flash</span>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"><path d="M12 2c-.1 0-.1 0 0 0 .5 4.7 4.3 8.5 9 9 .1 0 .1 0 0 0-4.7.5-8.5 4.3-9 9 0 .1 0 .1 0 0-.5-4.7-4.3-8.5-9-9 0 0 0 0 0 0 4.7-.5 8.5-4.3 9-9z" fill="currentColor"/></svg>
+                        <span class="skill-name">Gemini 2.0 Flash</span>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"><path d="M12 2c-.1 0-.1 0 0 0 .5 4.7 4.3 8.5 9 9 .1 0 .1 0 0 0-4.7.5-8.5 4.3-9 9 0 .1 0 .1 0 0-.5-4.7-4.3-8.5-9-9 0 0 0 0 0 0 4.7-.5 8.5-4.3 9-9z" fill="currentColor"/></svg>
+                        <span class="skill-name">Full Control Gemini</span>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        <span class="skill-name">CodeGemma</span>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"><path d="M6 3h3v3H6zm9 0h3v3h-3zm-6 5h6v11a3 3 0 0 1-3 3 3 3 0 0 1-3-3V8z" fill="currentColor"/></svg>
+                        <span class="skill-name">Ollama</span>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A4.5 4.5 0 005 6.5c0 1.25.5 2.38 1.34 3.19C5.45 10.45 5 11.4 5 12.5A4.5 4.5 0 009.5 17c1.25 0 2.38-.5 3.19-1.34A4.5 4.5 0 0020 12.5a4.5 4.5 0 00-4.5-4.5H15A4.5 4.5 0 009.5 2z"/></svg>
+                        <span class="skill-name">LLM Knowledge</span>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                        <span class="skill-name">Chain of Thought</span>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+                        <span class="skill-name">Prompt Engineering</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Bottom Closure (Removed standalone evolution) -->
+    <section class="container closing-section" id="contact">
+        <h2 data-i18n="contact_hook">Let's build something.</h2>
+        <div class="social-links">
+            <a href="https://wa.me/2389509556" class="social-icon" target="_blank" rel="noopener noreferrer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.031 6.172c-2.32 0-4.518.892-6.193 2.512-3.418 3.3-3.418 8.651 0 11.951 1.054 1.018 2.378 1.745 3.82 2.1l.481.118v2.427l2.131-1.222.544-.312.637.042c.193.012.387.018.583.018 4.67 0 8.457-3.714 8.5-8.274.001-.065.002-.129.002-.194 0-4.577-3.791-8.298-8.505-8.298zm7.398 8.274c-.035 3.737-3.137 6.777-6.938 6.777-.162 0-.323-.005-.483-.016l-1.464-.097-2.126 1.218v-2.134l-.391-.096c-1.185-.292-2.268-.887-3.134-1.722-2.812-2.715-2.812-7.119 0-9.833 1.381-1.332 3.233-2.067 5.215-2.067 4.027 0 7.285 3.193 7.321 7.151.001.066.001.132.001.199z"/></svg>
+                <span>WhatsApp</span>
+            </a>
+            <a href="https://github.com/denzel-vicente" class="social-icon" target="_blank" rel="noopener noreferrer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.63-.33 2.47-.33.84 0 1.68.11 2.47.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                <span>GitHub</span>
+            </a>
+            <a href="https://instagram.com/lildhxz" class="social-icon" target="_blank" rel="noopener noreferrer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                <span>Instagram</span>
+            </a>
+            <a href="https://kriolcode.rf.gd" class="social-icon" target="_blank" rel="noopener noreferrer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                <span>Company</span>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p data-i18n="footer_copy">© 2026 Denzel Vicente | All Rights Reserved</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
