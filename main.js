@@ -19,7 +19,7 @@ const translations = {
         about_quote: "\"I believe high-level performance and clean engineering are essential to build exceptional software — bypassing any hardware limitations.\"",
         about_stat_github: "Years on GitHub",
         about_stat_professional: "Professional Exp",
-        about_stat_jam: "Game Jam Winner",
+        about_stat_projects: "Completed Projects",
         about_stat_tech: "Technologies",
         projects_subtitle: "THE PROJECT MOSAIC",
         projects_title: "Infrastructure Gallery",
@@ -83,7 +83,7 @@ const translations = {
         about_quote: "\"Acredito que o desempenho de alto nível e a engenharia limpa são essenciais para construir softwares excepcionais — superando qualquer limitação de hardware.\"",
         about_stat_github: "Anos no GitHub",
         about_stat_professional: "Exp Profissional",
-        about_stat_jam: "Vencedor da Game Jam",
+        about_stat_projects: "Projetos Concluídos",
         about_stat_tech: "Tecnologias",
         projects_subtitle: "O MOSAICO DE PROJETOS",
         projects_title: "Galeria de Infraestrutura",
@@ -184,10 +184,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.addEventListener('click', () => setLanguage(btn.getAttribute('data-lang')));
     });
-    
-    let savedLocale = 'en';
-    try { savedLocale = localStorage.getItem('locale') || 'en'; } catch (e) {}
-    setLanguage(savedLocale);
 
     // Theme Toggle
     const themeToggle = document.getElementById('theme-toggle');
@@ -349,4 +345,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Set initial language (moved here to ensure runTerminalAnimation is initialized)
+    let savedLocale = 'en';
+    try { savedLocale = localStorage.getItem('locale') || 'en'; } catch (e) {}
+    setLanguage(savedLocale);
 });
+
