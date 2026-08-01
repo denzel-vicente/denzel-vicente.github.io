@@ -58,6 +58,7 @@ const translations = {
             { text: "  -> Role: Full-Stack Developer & Systems Architect", type: "text" },
             { text: "  -> Experience: 2+ Years of Logic Engineering", type: "text" },
             { text: "  -> Location: Praia, Cabo Verde 🇨🇻", type: "text" },
+            { text: "[SUCCESS] LLM Loaded.", type: "success" },
             { text: "[SUCCESS] Workstation state: Ready.", type: "success" },
             { text: "denzel@workstation:~$ ", type: "cmd_ready" }
         ],
@@ -122,6 +123,7 @@ const translations = {
             { text: "  -> Cargo: Desenvolvedor Full-Stack e Arquiteto de Sistemas", type: "text" },
             { text: "  -> Experiência: Mais de 2 anos de Engenharia de Lógica", type: "text" },
             { text: "  -> Localização: Praia, Cabo Verde 🇨🇻", type: "text" },
+            { text: "[SUCCESS] LLM Carregado.", type: "success" },
             { text: "[SUCCESS] Estado da estação de trabalho: Pronta.", type: "success" },
             { text: "denzel@workstation:~$ ", type: "cmd_ready" }
         ],
