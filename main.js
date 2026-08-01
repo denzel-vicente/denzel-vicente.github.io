@@ -55,9 +55,9 @@ const translations = {
             { text: "[SUCCESS] Ecosystem: JavaScript, Node.js, PHP, & modern frontends loaded.", type: "success" },
             { text: "[INFO] Loading profile stats...", type: "info" },
             { text: "  -> Role: Full-Stack Developer & Systems Architect", type: "text" },
-            { text: "  -> Experience: 4+ Years of Logic Engineering", type: "text" },
+            { text: "  -> Experience: 2+ Years of Logic Engineering", type: "text" },
             { text: "  -> Location: Praia, Cabo Verde 🇨🇻", type: "text" },
-            { text: "[SUCCESS] Google Antigravity AI agent linked.", type: "success" },
+            { text: "[SUCCESS] LLM Ecosystem linked.", type: "success" },
             { text: "[SUCCESS] Workstation state: Ready.", type: "success" },
             { text: "denzel@workstation:~$ ", type: "cmd_ready" }
         ],
@@ -119,9 +119,9 @@ const translations = {
             { text: "[SUCCESS] Ecossistema: JavaScript, Node.js, PHP e frontends modernos.", type: "success" },
             { text: "[INFO] Carregando estatísticas do perfil...", type: "info" },
             { text: "  -> Cargo: Desenvolvedor Full-Stack e Arquiteto de Sistemas", type: "text" },
-            { text: "  -> Experiência: Mais de 4 anos de Engenharia de Lógica", type: "text" },
+            { text: "  -> Experiência: Mais de 2 anos de Engenharia de Lógica", type: "text" },
             { text: "  -> Localização: Praia, Cabo Verde 🇨🇻", type: "text" },
-            { text: "[SUCCESS] Agente de IA Google Antigravity vinculado.", type: "success" },
+            { text: "[SUCCESS] Ecossistema de LLM vinculado.", type: "success" },
             { text: "[SUCCESS] Estado da estação de trabalho: Pronta.", type: "success" },
             { text: "denzel@workstation:~$ ", type: "cmd_ready" }
         ],
