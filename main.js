@@ -51,13 +51,12 @@ const translations = {
         terminal_lines: [
             { text: "denzel@workstation:~$ ./init_portfolio.sh --verbose", type: "cmd" },
             { text: "[INFO] Initializing Denzel Vicente's logic station...", type: "info" },
-            { text: "[SUCCESS] Passion: Transforming ideas into functional digital products.", type: "success" },
-            { text: "[SUCCESS] Ecosystem: JavaScript, Node.js, PHP, & modern frontends loaded.", type: "success" },
+            { text: "[SUCCESS] Protocol DV: Loaded.", type: "success" },
+            { text: "[SUCCESS] Ecosystem: Loaded and linked.", type: "success" },
             { text: "[INFO] Loading profile stats...", type: "info" },
             { text: "  -> Role: Full-Stack Developer & Systems Architect", type: "text" },
             { text: "  -> Experience: 2+ Years of Logic Engineering", type: "text" },
             { text: "  -> Location: Praia, Cabo Verde 🇨🇻", type: "text" },
-            { text: "[SUCCESS] LLM Ecosystem linked.", type: "success" },
             { text: "[SUCCESS] Workstation state: Ready.", type: "success" },
             { text: "denzel@workstation:~$ ", type: "cmd_ready" }
         ],
@@ -115,13 +114,12 @@ const translations = {
         terminal_lines: [
             { text: "denzel@workstation:~$ ./init_portfolio.sh --verbose", type: "cmd" },
             { text: "[INFO] Inicializando a estação lógica de Denzel Vicente...", type: "info" },
-            { text: "[SUCCESS] Foco: Transformar ideias em produtos digitais funcionais.", type: "success" },
-            { text: "[SUCCESS] Ecossistema: JavaScript, Node.js, PHP e frontends modernos.", type: "success" },
+            { text: "[SUCCESS] Protocolo DV: Carregado.", type: "success" },
+            { text: "[SUCCESS] Ecossistema: Carregado e vinculado.", type: "success" },
             { text: "[INFO] Carregando estatísticas do perfil...", type: "info" },
             { text: "  -> Cargo: Desenvolvedor Full-Stack e Arquiteto de Sistemas", type: "text" },
             { text: "  -> Experiência: Mais de 2 anos de Engenharia de Lógica", type: "text" },
             { text: "  -> Localização: Praia, Cabo Verde 🇨🇻", type: "text" },
-            { text: "[SUCCESS] Ecossistema de LLM vinculado.", type: "success" },
             { text: "[SUCCESS] Estado da estação de trabalho: Pronta.", type: "success" },
             { text: "denzel@workstation:~$ ", type: "cmd_ready" }
         ],
