@@ -51,8 +51,8 @@ const translations = {
         terminal_lines: [
             { text: "denzel@workstation:~$ ./init_portfolio.sh --verbose", type: "cmd" },
             { text: "[INFO] Initializing Denzel Vicente's logic station...", type: "info" },
-            { text: "[SUCCESS] CPU: AMD Ryzen & GPU: NVIDIA RTX online.", type: "success" },
-            { text: "[SUCCESS] Custom Linux kernel (Q4OS) loaded.", type: "success" },
+            { text: "[SUCCESS] Passion: Transforming ideas into functional digital products.", type: "success" },
+            { text: "[SUCCESS] Ecosystem: JavaScript, Node.js, PHP, & modern frontends loaded.", type: "success" },
             { text: "[INFO] Loading profile stats...", type: "info" },
             { text: "  -> Role: Full-Stack Developer & Systems Architect", type: "text" },
             { text: "  -> Experience: 4+ Years of Logic Engineering", type: "text" },
@@ -115,8 +115,8 @@ const translations = {
         terminal_lines: [
             { text: "denzel@workstation:~$ ./init_portfolio.sh --verbose", type: "cmd" },
             { text: "[INFO] Inicializando a estação lógica de Denzel Vicente...", type: "info" },
-            { text: "[SUCCESS] CPU: AMD Ryzen & GPU: NVIDIA RTX online.", type: "success" },
-            { text: "[SUCCESS] Kernel Linux personalizado (Q4OS) carregado.", type: "success" },
+            { text: "[SUCCESS] Foco: Transformar ideias em produtos digitais funcionais.", type: "success" },
+            { text: "[SUCCESS] Ecossistema: JavaScript, Node.js, PHP e frontends modernos.", type: "success" },
             { text: "[INFO] Carregando estatísticas do perfil...", type: "info" },
             { text: "  -> Cargo: Desenvolvedor Full-Stack e Arquiteto de Sistemas", type: "text" },
             { text: "  -> Experiência: Mais de 4 anos de Engenharia de Lógica", type: "text" },
